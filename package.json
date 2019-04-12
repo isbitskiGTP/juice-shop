@@ -82,7 +82,7 @@
     "replace": "~0.3",
     "request": "~2",
     "sanitize-html": "1.4.2",
-    "sequelize": "~4",
+    "sequelize": "~5.3.0",
     "serve-favicon": "~2.4",
     "serve-index": "~1.9",
     "socket.io": "~2.0",
