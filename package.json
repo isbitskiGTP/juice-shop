@@ -88,7 +88,8 @@
     "socket.io": "~2.0",
     "sqlite3": "~3.1.13",
     "swagger-ui-express": "~2.0",
-    "z85": "~0.0"
+    "z85": "~0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "chai": "~4.1",
@@ -146,7 +147,9 @@
     "preprotractor": "npm run update-webdriver",
     "protractor": "node test/e2eTests.js",
     "stryker": "stryker run stryker.client-conf.js",
-    "vagrant": "cd vagrant && vagrant up"
+    "vagrant": "cd vagrant && vagrant up",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=6 <=9"
@@ -193,5 +196,6 @@
       "sanitize-html",
       "express-jwt"
     ]
-  }
+  },
+  "snyk": true
 }
